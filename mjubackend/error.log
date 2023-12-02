@@ -1,0 +1,33 @@
+*** Starting uWSGI 2.0.20-debian (64bit) on [Wed Nov 29 03:44:19 2023] ***
+compiled with version: 11.2.0 on 21 March 2022 11:00:44
+os: Linux-6.2.0-1016-aws #16~22.04.1-Ubuntu SMP Sun Nov  5 20:08:16 UTC 2023
+nodename: ip-172-31-12-152
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/mjubackend
+detected binary path: /usr/bin/uwsgi-core
+chdir() to /home/ubuntu/mjubackend
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 3738
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:10000 fd 3
+Python version: 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55ed846922f0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55ed846922f0 pid: 5981 (default app)
+mounting memo:app on /memo
+WSGI app 1 (mountpoint='/memo') ready in 0 seconds on interpreter 0x55ed84c76f60 pid: 5981
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 5981, cores: 1)
+Fatal Python error: PyInterpreterState_Delete: remaining subinterpreters
+Python runtime state: finalizing (tstate=0x000055ed846922f0)
+
